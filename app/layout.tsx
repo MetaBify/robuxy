@@ -5,6 +5,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import ClickTracker from "./components/ClickTracker";
 import AntiAdblockPopup from "./components/AntiAdblockPopup";
+import EntryOverlay from "./components/EntryOverlay";
 
 export const metadata: Metadata = {
   title: "viprbx",
@@ -51,6 +52,7 @@ export default function RootLayout({
         <Analytics />
 
         <AntiAdblockPopup />
+        <EntryOverlay />
         <NavBar />
         <ClickTracker>{children}</ClickTracker>
 

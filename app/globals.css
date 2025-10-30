@@ -468,3 +468,26 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@keyframes entryTickerSlide {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  15% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  85% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+}
+
+.animate-ticker {
+  animation: entryTickerSlide 3.2s ease-in-out forwards;
+}

@@ -100,6 +100,15 @@ function page() {
           </p>
         </div>
       </div>
+
+      <div className="mt-12 text-center">
+        <Link
+          href="/keywords"
+          className="text-xs uppercase tracking-[0.35em] text-emerald-500 transition hover:text-emerald-600 sm:text-sm"
+        >
+          robux giveaways - roblox reward codes - instant robux redemption
+        </Link>
+      </div>
     </div>
   );
 }
