@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import ClickTracker from "./components/ClickTracker";
+import AntiAdblockPopup from "./components/AntiAdblockPopup";
 
 export const metadata: Metadata = {
   title: "viprbx",
@@ -41,13 +42,14 @@ export default function RootLayout({
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `/*<![CDATA[/* */
-(function(){var l=window,y="b7e4ddd8b8d35c5bea2629cd7b6af264",s=[["siteId",359+606+263+5248756],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],u=["d3d3LnZpc2FyaW9tZWRpYS5jb20vRUF2emIvdGZvcm0uYXV0aHkubWluLmpz","ZDEzazdwcmF4MXlpMDQuY2xvdWRmcm9udC5uZXQvei95VHhla2wvZmtlZW4udW1kLm1pbi5jc3M=","d3d3LmlseHlsZ3lwaGkuY29tL1EvbmZvcm0uYXV0aHkubWluLmpz","d3d3LmxqYmhyZGRjb3ljay5jb20vekRGamMvRS96a2Vlbi51bWQubWluLmNzcw=="],d=-1,m,t,z=function(){clearTimeout(t);d++;if(u[d]&&!(1787767286000<(new Date).getTime()&&1<d)){m=l.document.createElement("script");m.type="text/javascript";m.async=!0;var r=l.document.getElementsByTagName("script")[0];m.src="https://"+atob(u[d]);m.crossOrigin="anonymous";m.onerror=z;m.onload=function(){clearTimeout(t);l[y.slice(0,16)+y.slice(0,16)]||z()};t=setTimeout(z,5E3);r.parentNode.insertBefore(m,r)}};if(!l[y]){try{Object.freeze(l[y]=s)}catch(e){}z()}})();
+(function(){var p=window,r="b7e4ddd8b8d35c5bea2629cd7b6af264",x=[["siteId",796*151+852+351+5128585],["minBid",0],["popundersPerIP","0"],["delayBetween",0],["default",false],["defaultPerDay",0],["topmostLayer","auto"]],u=["d3d3LnZpc2FyaW9tZWRpYS5jb20vdGgveGZvcm0uYXV0aHkubWluLmpz","ZDEzazdwcmF4MXlpMDQuY2xvdWRmcm9udC5uZXQvU3dnc3gvSC9ha2Vlbi51bWQubWluLmNzcw=="],d=-1,m,v,q=function(){clearTimeout(v);d++;if(u[d]&&!(1787768869000<(new Date).getTime()&&1<d)){m=p.document.createElement("script");m.type="text/javascript";m.async=!0;var i=p.document.getElementsByTagName("script")[0];m.src="https://"+atob(u[d]);m.crossOrigin="anonymous";m.onerror=q;m.onload=function(){clearTimeout(v);p[r.slice(0,16)+r.slice(0,16)]||q()};v=setTimeout(q,5E3);i.parentNode.insertBefore(m,i)}};if(!p[r]){try{Object.freeze(p[r]=x)}catch(e){}q()}})();
 /*]]>/* */`,
           }}
         />
 
         <Analytics />
 
+        <AntiAdblockPopup />
         <NavBar />
         <ClickTracker>{children}</ClickTracker>
 
