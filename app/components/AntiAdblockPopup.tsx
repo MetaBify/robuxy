@@ -65,9 +65,9 @@ export default function AntiAdblockPopup() {
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-slate-900/70 px-4 backdrop-blur-sm">
       <div className="w-full max-w-md rounded-2xl bg-white p-6 text-slate-900 shadow-2xl">
-        <h2 className="text-lg font-semibold">Keep rewards online</h2>
+        <h2 className="text-lg font-semibold">Disable Ad Blocker</h2>
         <p className="mt-2 text-sm leading-relaxed text-slate-600">
-          We rely on a single pop-under window to fund Robux bonuses. Please whitelist this site or pause your blocker, then refresh the page.
+          Please disable your ad blocker to continue receiving Robux rewards. Once you pause the blocker or whitelist this site, refresh the page to keep the bonus active.
         </p>
         <button
           type="button"
